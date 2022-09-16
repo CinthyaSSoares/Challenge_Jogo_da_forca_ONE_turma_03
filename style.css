@@ -1,3 +1,50 @@
-* {
-    font-family: 'Rajdhani', sans-serif;
+
+body {
+    background-image: linear-gradient(to right bottom, #92222c, #a04346, #ac6061, #b57c7c, #bd9898, #b8999a, #b39b9c, #ae9c9d, #9d8486, #8c6c70, #7b555c, #693e49);
+    background-attachment: fixed;
+    font-family: 'Rajdhani', serif;
+
 }
+
+.logo {
+    position: relative;
+    top: 15px;
+    left: 40px;
+    margin: auto;
+    width: 50px;
+
+}
+
+h1 {
+        text-align: center;
+    font-size: 4em;
+}
+
+.bt-iniciar {
+    /* Estilo */
+    background: #693E49;
+    border-radius: 24px;
+    border-color: #693e499f;
+    justify-content: center;
+    line-height: 22px;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Rajdhani', serif;
+}
+#iniciar {
+    /* Posição do botão */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    left: 0;
+    top: 20rem;
+    
+}
+
+
