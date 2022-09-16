@@ -4,6 +4,12 @@ body {
     background-attachment: fixed;
     font-family: 'Rajdhani', serif;
 
+    min-width: 1224px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+
 }
 
 .logo {
@@ -16,7 +22,7 @@ body {
 }
 
 h1 {
-        text-align: center;
+    text-align: center;
     font-size: 4em;
 }
 
@@ -25,14 +31,14 @@ h1 {
     background: #693E49;
     border-radius: 24px;
     border-color: #693e499f;
+    font-style: normal;
+    font-family: 'Rajdhani', serif;
+
     justify-content: center;
     line-height: 22px;
     font-size: 24px;
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Rajdhani', serif;
-}
-#iniciar {
+    font-weight: 700;    
+
     /* Posição do botão */
     display: flex;
     flex-direction: row;
