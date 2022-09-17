@@ -26,31 +26,30 @@ h1 {
     font-size: 4em;
 }
 
-.bt-iniciar {
-    /* Estilo */
-    background: #693E49;
-    border-radius: 24px;
-    border-color: #693e499f;
-    font-style: normal;
-    font-family: 'Rajdhani', serif;
-
-    justify-content: center;
-    line-height: 22px;
-    font-size: 24px;
-    font-weight: 700;    
-
-    /* Posição do botão */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    
-    position: absolute;
-    width: 317px;
-    height: 114px;
-    left: 0;
-    top: 20rem;
-    
-}
+.btn-iniciar {
+     /* Estilo */
+     background: #693E49;
+     border-radius: 24px;
+     border-color: #693e499f;
+     font-style: normal;
+     font-family: 'Rajdhani', serif;
+ 
+     justify-content: center;
+     line-height: 22px;
+     font-size: 24px;
+     font-weight: 700;    
+ 
+     /* Posição do botão */
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     padding: 24px;
+     
+     position: absolute;
+     width: 317px;
+     height: 114px;
+     left: 0;
+     top: 20rem;    
+ }
 
 
