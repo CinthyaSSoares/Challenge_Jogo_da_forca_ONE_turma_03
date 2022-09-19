@@ -34,7 +34,6 @@ h1 {
      font-style: normal;
      font-family: 'Rajdhani', serif;
  
-     justify-content: center;
      line-height: 22px;
      font-size: 24px;
      font-weight: 700;    
@@ -42,7 +41,8 @@ h1 {
      /* Posição do botão */
      display: flex;
      flex-direction: row;
-     align-items: flex-start;
+     justify-content: center;
+     align-items: center;
      padding: 24px;
      
      position: absolute;
