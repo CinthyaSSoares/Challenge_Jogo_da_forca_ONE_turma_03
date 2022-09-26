@@ -6,7 +6,8 @@ let palavraSecreta = "";
 function sorteiaPalavras (){
     let palavra = palavras[Math.floor(Math.random() * palavras.length)]
     palavraSecreta = palavra
-    console.log(palavraSecreta)
+    console.log(palavra)
+    return palavra
 }
 
 

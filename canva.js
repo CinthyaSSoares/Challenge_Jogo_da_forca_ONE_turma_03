@@ -6,7 +6,7 @@ function desenharCanvas() {
     tabuleiro.strokeStyle ="#0A3871";
 
     //manipulação para desenhar
-    tabuleiro.fillReact(0,0,1200,800);
+    tabuleiro.fillRect(0,0,1200,800);
     tabuleiro.beginPath();
     tabuleiro.moveTo(650,500);
     tabuleiro.lineTo(900,500);
