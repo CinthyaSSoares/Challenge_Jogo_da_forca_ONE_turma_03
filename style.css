@@ -1,6 +1,6 @@
 
 body {
-    background-image: linear-gradient(to right bottom, #92222c, #a04346, #ac6061, #b57c7c, #bd9898, #b8999a, #b39b9c, #ae9c9d, #9d8486, #8c6c70, #7b555c, #693e49);
+    background-image: linear-gradient(to right bottom, #0d0de9, #0062ff, #008cff, #00adf7, #00cae4, #00d8dd, #00e4ca, #00eead, #00ef94, #00ef76, #00ee51, #0eec0e);
     background-attachment: fixed;
     font-family: 'Rajdhani', serif;
 
@@ -28,9 +28,9 @@ h1 {
 
 .btn-iniciar {
      /* Estilo */
-     background: #693E49;
+     background: #00DAA9;
      border-radius: 24px;
-     border-color: #693e499f;
+     border-color: #00DAA9;
      font-style: normal;
      font-family: 'Rajdhani', serif;
  
@@ -51,6 +51,11 @@ h1 {
      left: 0;
      margin: auto; 
      right: 0;
+ }
+
+ #forca {
+    background: none;
+    
  }
 
 

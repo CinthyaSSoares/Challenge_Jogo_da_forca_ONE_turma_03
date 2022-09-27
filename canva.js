@@ -32,7 +32,7 @@ function desenharLinhas() {
 function escreverLetraCorreta(index){
     tabuleiro.font = "bold 52px Inter";
     tabuleiro.lineCap = "round";
-    tabuleiro.fillStyle = "#0A3871";
+    tabuleiro.fillStyle = "#16092E";
     tabuleiro.lineWidth = 6;
     let largura = 600/palavraSecreta.length
     tabuleiro.fillText(palavraSecreta[index], 505 + (largura * index), 620)
@@ -42,7 +42,7 @@ function escreverLetraCorreta(index){
 function escreverLetraIncorreta(letra, erros){
     tabuleiro.font = "bold 40px Inter";
     tabuleiro.lineCap = "round";
-    tabuleiro.fillStyle = "#";
+    tabuleiro.fillStyle = "#691F1F";
     tabuleiro.lineWidth = 6;
     tabuleiro.fillText(letra, 520 +(40 * (10 - erros)), 720, 40);
 }
