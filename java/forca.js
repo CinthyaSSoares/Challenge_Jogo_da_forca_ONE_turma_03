@@ -112,7 +112,7 @@ function mudarStyleLetra(tecla, condicao) {
 }
 mudarStyleLetra();
 
-async function comparaListas(letra) {
+function comparaListas(letra) {
     const posicao = palavraSecretaSorteada.indexOf(letra);
     if (posicao < 0) {
         tentativas--
@@ -123,6 +123,7 @@ async function comparaListas(letra) {
         if(tentativas == 0){
             alertaModal("VOCÊ PERDEU! A palavra secreta era " + palavraSecretaSorteada, + document.getElementsByClassName('perdeu'));
             document.querySelector(".ganhou").style.display="none"; //escondendo imagem que ganhou
+            piscarBotaoJogarDeNovo();
         }
     
     }
@@ -144,22 +145,29 @@ async function comparaListas(letra) {
         alertaModal("PARABÉNS VOCÊS GANHOU!!", + document.getElementsByClassName('ganhou'));
             document.querySelector(".perdeu").style.display="none"; //escondendo imagem que perdeu
             tentativas = 0;
-
-        while(jogarNovamente == true) {
-            document.getElementById('btnReiniciar').style.background = '#C839E7';
-            await atraso(500) //tempo em millisegundo
-            document.getElementById('btnReiniciar').style.background = '#33CCCC';
-            await atraso(500)
-            document.getElementById('btnReiniciar').style.background = '#33CC36';
-            await atraso(500)
-            document.getElementById('btnReiniciar').style.background = '#E5EB66';
-            await atraso(500)
-        }
+            piscarBotaoJogarDeNovo();
     }
 }
 // Função para fazer a troca de cor no efeito do botão ser visivel ao olho humano
 async function atraso(tempo) {
     return new Promise(x => setTimeout(x, tempo ))
+}
+
+async function piscarBotaoJogarDeNovo() {
+    while(jogarNovamente == true) {
+        document.getElementById('btnReiniciar').style.background = '#C839E7';
+        document.getElementById('btnReiniciar').style.scale = 1.3;
+        await atraso(500) //tempo em millisegundo
+        document.getElementById('btnReiniciar').style.background = '#33CCCC';
+        document.getElementById('btnReiniciar').style.scale = 1.3;
+        await atraso(500)
+        document.getElementById('btnReiniciar').style.background = '#33CC36';
+        document.getElementById('btnReiniciar').style.scale = 1.3;
+        await atraso(500)
+        document.getElementById('btnReiniciar').style.background = '#E5EB66';
+        document.getElementById('btnReiniciar').style.scale = 1.3;
+        await atraso(500)
+    }
 }
 
 function carregaImagemForca() {
@@ -204,8 +212,9 @@ function alertaModal(titulo, mensagem){
 
 let botaoReiniciar = document.querySelector("#btnReiniciar")
     botaoReiniciar.addEventListener("click", function(){
-        location.reload()
-});
+        jogarNovamente = false;
+        location.reload();
+})
 
 // function novoJogo() {
 //     location.reload(true); 
