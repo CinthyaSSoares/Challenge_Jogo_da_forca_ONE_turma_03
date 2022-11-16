@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<<<<<<< HEAD
 
 <head>
     <meta charset="UTF-8">
@@ -10,17 +9,14 @@
     <link rel="stylesheet" href="./css/forca.css" media="screen">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Jogo da Forca</title>
 </head>
 
 <body>
     <div class="container">
-        <div id="imagem">
-
-        </div>
-
-        <div id="palavra-secreta">
-        </div>
+        <div id="imagem"></div>
+        <div id="palavra-secreta"></div>
         <div id="teclado">
             <div class="teclas">
                 <button id="tecla-A" onclick="verificaLetraEscolhida('A')">A</button>
@@ -51,12 +47,9 @@
                 <button id="tecla-Z" onclick="verificaLetraEscolhida('Z')">Z</button>
                 <button id="btnReiniciar">🎮</button>
             </div>
-    </div>
-        <div id="categoria">
-
         </div>
-
-        <!-- Modal -->
+        <div id="categoria"></div>
+        <!-- Modal Da caixa sobre ganhar/ perder -->
         <div class="modal fade" id="minhaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -68,18 +61,40 @@
                         </button>
                     </div>
                     <div class="modal-body"></div>
-                    <img class="perdeu" src="./imagens/perdeu.JPG"/>
-                    <img class="ganhou" src="./imagens/ganhou.gif"/>
+                    <img class="perdeu" src="./imagens/perdeu.JPG" />
+                    <img class="ganhou" src="./imagens/ganhou.gif" />
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
                     </div>
                 </div>
             </div>
         </div>
-    
+        <!-- Modal para adicionar Palavra e categoria-->
+        <div id="modal-alerta" class="modal-container">
+            <div class="modal-add-palavra">
+                <div class="modal-header-add-palavra" id="modal-titulo">
+                    <span id="fechaModal" class="close">&times;</span>
+                    <h2>ADICIONAR PALAVRA</h2>
+                </div>
+                <div class="modal-body-add-palavra" id="modal-mensagem">
+                    <input id="addPalavra" type="text" placeholder="PALAVRA" required>
+                    <input id="addCategoria" type="text" placeholder="CATEGORIA" required>
+                    <button onclick="adicionarPalavra()">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="status">Modo Automático</div>
+    <button id="abreModalAddPalavra"><i class='bx bx-add-to-queue'></i></i></button>
+    <img src="./imagens/apontando.gif" id="jogarNovamente"></img>
+    <button id="recarregar" onclick="sortearManual()"><i class='bx bx-refresh'></i></button>
+    <button id="jogarAutomatico" onclick="listaAutomatica()"><i class='bx bx-pause-circle'></i></button>
+
     <footer>
 
     </footer>
+
     <script src="./java/forca.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -94,18 +109,10 @@
 </body>
 
 </html>
-=======
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <meta name="viewport" content="width=device-with, initial-scale=1.0"
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <title> Jogo da Forca </title>
-    </head>
-    <body>
+
+
+<!-- =======
+        <body>
         
         <img src="logo.png" class="logo">
         <h1> Jogo da forca </h1>
@@ -113,13 +120,13 @@
         <div id="div-desaparece" class="home-botoes">
             <a href="#forca">
              <!--Botão-->
-                <input class="btn-iniciar" type="submit" value="INICIAR JOGO" id="iniciar" onclick="desapareceBotao()" >
+<!-- <input class="btn-iniciar" type="submit" value="INICIAR JOGO" id="iniciar" onclick="desapareceBotao()" >
 
             </a>
         </div>
         <div id="aparece-forca" class="canvas">
                 <!--Canvas da forca-->
-            <canvas id="forca" height="860px" width="1200"></canvas>
+<!-- <canvas id="forca" height="860px" width="1200"></canvas>
 
 
         </div>
@@ -127,12 +134,12 @@
         <footer>
 
           <!--©art & animation by saniis-->
-        </footer>   
+<!-- </footer>   
          <!--Links-->
-         <script type="text/javascript" src="forca.js"></script>
+<!-- <script type="text/javascript" src="forca.js"></script>
          <script type="text/javascript" src="canva.js"></script>  
     </body>
     
 
-</html>
->>>>>>> b0c17947266e2f9ae0e5668fe2c6459ea36130a7
+</html> --> --> --> -->
+>>>>>>> b0c17947266e2f9ae0e5668fe2c6459ea36130a7 -->

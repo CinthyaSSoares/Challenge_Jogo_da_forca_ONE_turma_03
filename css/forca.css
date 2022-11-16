@@ -53,7 +53,7 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    flex-direction: column;
 }
 
 #imagem {
@@ -87,7 +87,6 @@ body {
     margin-top: 30px;
 }
 
-
 .teclas button {
     margin-bottom: 5px;
     cursor: pointer;
@@ -115,7 +114,6 @@ body {
 }
 
 /*Imagens do modal*/
-
 .perdeu {
     width: auto;
     height: auto;
@@ -130,6 +128,22 @@ body {
     display: flex;
     justify-items: center;
     justify-content: center;
+}
+
+/* Personalizando os botões pequenos*/
+
+#abreModalAddPalavra {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border: none;
+    outline: none;
+    border-radius: 70px;
+    font-size: 3em;
+    background-color: transparent;
+    color: #12441b;
+    cursor: pointer;
+
 }
 
 
@@ -230,3 +244,4 @@ body {
         font-size: 2.6em;
     }
 }
+/*Final -fazendo responsível*/
