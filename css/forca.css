@@ -132,7 +132,8 @@ body {
 
 /* Personalizando os botões pequenos*/
 
-#abreModalAddPalavra {
+/* Aparência*/
+#addPalavraNova, #recarregar, #jogarAutomatico, #jogarNovamente  {
     position: fixed;
     width: 70px;
     height: 70px;
@@ -141,11 +142,42 @@ body {
     border-radius: 70px;
     font-size: 3em;
     background-color: transparent;
-    color: #12441b;
+    color: #edf5ee;
     cursor: pointer;
-
 }
 
+/* Posições */
+#addPalavraNova {
+    bottom: 160px;
+    right: 5px;
+}
+
+#recarregar {
+    bottom: 80px;
+    right: 5px;
+}
+
+#jogarAutomatico {
+    bottom: 5px;
+    right: 5px;
+}
+
+/* Frase embaixo dos inputs */
+
+#status {
+    position: fixed;
+    bottom: 10px;
+    right: 100px;
+    color: aliceblue;
+}
+
+/* Mãozinha */
+#jogarNovamente {
+    bottom: 15px;
+    right: 30px;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+}
 
 /*fazendo responsível*/
 @media screen and (min-width: 320px) {
