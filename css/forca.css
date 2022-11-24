@@ -173,6 +173,7 @@ body {
 
 /* Mãozinha */
 #jogarNovamente {
+    display: none;
     bottom: 15px;
     right: 30px;
     transform: rotate(-90deg);
@@ -181,7 +182,7 @@ body {
 
 /* Editandos os inputs*/
 .modal-container {
-    
+    display: none;
     left: 0;
     top: 0;
     width: 100%;
@@ -190,12 +191,13 @@ body {
     position: fixed;
     z-index: 1;
     background-color: rgba(0,0,0, 0.6);
+    font-family: 'Outfit', sans-serif;
 }
 
 .modal-add-palavra {
     position: relative;
     background-color: aliceblue;
-    border: 10px solid #94ec95;
+    border: 10px solid #089928;
     border-radius: 10px;
     text-align: center;
     margin: auto;
@@ -221,6 +223,49 @@ body {
     to{top: 0; opacity: 1;}
 }
 
+.modal-header-add-palavra {
+    padding: 2px 16px;
+    background-color: #94ec95;
+    font-size: 1.3em;
+    color: aliceblue;
+    border-bottom: 10px solid #089928;
+}
+
+.input-botao {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #94ec95;
+    border-radius: 100px; 
+    border: 1px solid #9c9c9c;   
+    color: aliceblue;
+    outline: none;
+}
+
+.input-botao:hover, input-botao:focus {
+    background-color: #0a5c17;
+}
+
+.modal-body-add-palavra {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.modal-body-add-palavra input{
+    text-transform: uppercase;
+}
+
+#addPalavra, #addCategoria {
+    text-align: center;
+    margin: 5px;
+    font-size: 1.5em;
+    border-radius: 15px;
+    border: 1px solid #9c9c9c;
+    outline: none;
+
+}
 
 /*fazendo responsível*/
 @media screen and (min-width: 320px) {
