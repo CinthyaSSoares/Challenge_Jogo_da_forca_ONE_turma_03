@@ -142,7 +142,7 @@ body {
     border-radius: 70px;
     font-size: 3em;
     background-color: transparent;
-    color: #edf5ee;
+    color: aliceblue;
     cursor: pointer;
 }
 
@@ -178,6 +178,49 @@ body {
     transform: rotate(-90deg);
     transform-origin: left top 0;
 }
+
+/* Editandos os inputs*/
+.modal-container {
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0,0,0, 0.6);
+}
+
+.modal-add-palavra {
+    position: relative;
+    background-color: aliceblue;
+    border: 10px solid #94ec95;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    top: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0 0.2), 0 6px 20px 0 rgba(0,0,0 0.19);
+
+    -webkit-animation-name: animacao;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animacao;
+    animation-duration: 0.4s;
+}
+
+/* Animação do input */
+@-webkit-keyframes animacao {
+    from{top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+
+@keyframes animacao {
+    from{top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+
 
 /*fazendo responsível*/
 @media screen and (min-width: 320px) {
